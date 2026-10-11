@@ -2,18 +2,14 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green.svg)
-![Platform: Claude Code](https://img.shields.io/badge/Platform-Claude%20Code-blueviolet.svg)
 
 > **Did the user actually authorize this?**
->
 > IAG answers that question before every write, push, delete, or external action — in under 10ms, with no LLM call.
 
 ---
 
 ## The problem it solves
-
-Claude Code is powerful enough to push code, send Slack messages, delete files, and call external APIs — all in a single session. Without a guard, *ambiguous intent becomes unintended action*.
-
+Agents are powerful enough to push code, send Slack messages, delete files, and call external APIs — all in a single session. Without a guard, *ambiguous intent becomes unintended action*.
 IAG inserts a structured consent layer between intent and execution. Routine read-only work passes silently. Consequential actions surface a gate. Destructive actions are blocked outright until you say so explicitly.
 
 ---
@@ -276,11 +272,5 @@ When building multi-agent systems:
 - **Judge** — separate frontier model; optimizes *only* for user intent; never the same model as the actor
 - Judge sits at the **action boundary**, not end of task
 - Scope boundaries must be explicit: what can this agent touch, write, delete?
-
----
-
-## Requirements
-
-- [Claude Code](https://claude.ai/code)
 - Python 3.8+ (hook has no dependencies beyond stdlib)
 - `gh` CLI (optional — used by `/action-permissions` for cron plane lookups)
