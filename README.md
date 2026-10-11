@@ -1,4 +1,4 @@
-# Claude Intent Alignment Guard
+# Intent Alignment Guard
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green.svg)
